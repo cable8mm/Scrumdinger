@@ -18,6 +18,7 @@
 		9A93176D2B26F26200A2AB30 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A93176C2B26F26200A2AB30 /* TrailingIconLabelStyle.swift */; };
 		9A93176F2B26F46F00A2AB30 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A93176E2B26F46F00A2AB30 /* ScrumsView.swift */; };
 		9A9317722B26FD5500A2AB30 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317712B26FD5500A2AB30 /* DetailView.swift */; };
+		9A9317742B27066900A2AB30 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317732B27066900A2AB30 /* DetailEditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		9A93176C2B26F26200A2AB30 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		9A93176E2B26F46F00A2AB30 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		9A9317712B26FD5500A2AB30 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		9A9317732B27066900A2AB30 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				9A93176C2B26F26200A2AB30 /* TrailingIconLabelStyle.swift */,
 				9A9317572B20386100A2AB30 /* MeetingView.swift */,
 				9A9317712B26FD5500A2AB30 /* DetailView.swift */,
+				9A9317732B27066900A2AB30 /* DetailEditView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				9A93176F2B26F46F00A2AB30 /* ScrumsView.swift in Sources */,
 				9A93175A2B20386100A2AB30 /* Item.swift in Sources */,
 				9A93176B2B26F02B00A2AB30 /* CardView.swift in Sources */,
+				9A9317742B27066900A2AB30 /* DetailEditView.swift in Sources */,
 				9A9317562B20386100A2AB30 /* ScrumdingerApp.swift in Sources */,
 				9A93176D2B26F26200A2AB30 /* TrailingIconLabelStyle.swift in Sources */,
 			);
