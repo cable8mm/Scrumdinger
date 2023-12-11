@@ -13,7 +13,7 @@ struct ScrumsView: View {
     var body: some View {
         NavigationStack {
             List(scrums) { scrum in
-                NavigationLink(destination: DetailView(scrum: scrum)) {
+                NavigationLink(destination: DetailView(scrum: scrums)) {
                     CardView(scrum: scrum)
                 }
                 .listRowBackground(scrum.theme.mainColor)
