@@ -20,6 +20,7 @@
 		9A9317722B26FD5500A2AB30 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317712B26FD5500A2AB30 /* DetailView.swift */; };
 		9A9317742B27066900A2AB30 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317732B27066900A2AB30 /* DetailEditView.swift */; };
 		9A9317762B27247B00A2AB30 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317752B27247B00A2AB30 /* ThemeView.swift */; };
+		9A9317782B27256B00A2AB30 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317772B27256B00A2AB30 /* ThemePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		9A9317712B26FD5500A2AB30 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		9A9317732B27066900A2AB30 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		9A9317752B27247B00A2AB30 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		9A9317772B27256B00A2AB30 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				9A9317712B26FD5500A2AB30 /* DetailView.swift */,
 				9A9317732B27066900A2AB30 /* DetailEditView.swift */,
 				9A9317752B27247B00A2AB30 /* ThemeView.swift */,
+				9A9317772B27256B00A2AB30 /* ThemePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				9A93175A2B20386100A2AB30 /* Item.swift in Sources */,
 				9A93176B2B26F02B00A2AB30 /* CardView.swift in Sources */,
 				9A9317742B27066900A2AB30 /* DetailEditView.swift in Sources */,
+				9A9317782B27256B00A2AB30 /* ThemePicker.swift in Sources */,
 				9A9317562B20386100A2AB30 /* ScrumdingerApp.swift in Sources */,
 				9A93176D2B26F26200A2AB30 /* TrailingIconLabelStyle.swift in Sources */,
 			);
