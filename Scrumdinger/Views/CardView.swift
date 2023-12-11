@@ -1,6 +1,5 @@
 import SwiftUI
 
-
 struct CardView: View {
     let scrum: DailyScrum
     var body: some View {
@@ -23,7 +22,6 @@ struct CardView: View {
         .foregroundColor(scrum.theme.accentColor)
     }
 }
-
 
 struct CardView_Previews: PreviewProvider {
     static var scrum = DailyScrum.sampleData[0]

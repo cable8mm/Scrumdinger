@@ -26,7 +26,7 @@ struct MeetingView: View {
                 Text("Speaker 1 of 3")
                 Spacer()
                 Button(action: {}) {
-                    Image(systemName:"forward.fill")
+                    Image(systemName: "forward.fill")
                 }
                 .accessibilityLabel("Next speaker")
             }
