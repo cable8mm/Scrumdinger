@@ -1,10 +1,3 @@
-//
-//  Theme.swift
-//  Scrumdinger
-//
-//  Created by samgu.lee on 11/12/23.
-//
-
 import SwiftUI
 
 enum Theme: String {
@@ -31,7 +24,6 @@ enum Theme: String {
         case .indigo, .magenta, .navy, .oxblood, .purple: return .white
         }
     }
-
     var mainColor: Color {
         Color(rawValue)
     }
