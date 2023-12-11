@@ -1,6 +1,5 @@
 import SwiftUI
 
-
 @main
 struct ScrumdingerApp: App {
     @State private var scrums = DailyScrum.sampleData

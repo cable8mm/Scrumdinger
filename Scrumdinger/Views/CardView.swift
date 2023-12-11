@@ -1,6 +1,5 @@
 import SwiftUI
 
-
 struct CardView: View {
     let scrum: DailyScrum
     var body: some View {
