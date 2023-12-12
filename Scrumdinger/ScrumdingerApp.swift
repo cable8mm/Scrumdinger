@@ -10,7 +10,8 @@ struct ScrumdingerApp: App {
                 Task {
                     do {
                         try await store.save(scrums: store.scrums)
-                    } catch {
+                    }
+                    catch {
                         fatalError(error.localizedDescription)
                     }
                 }
@@ -18,7 +19,8 @@ struct ScrumdingerApp: App {
             .task {
                 do {
                     try await store.load()
-                } catch {
+                }
+                catch {
                     fatalError(error.localizedDescription)
                 }
             }
