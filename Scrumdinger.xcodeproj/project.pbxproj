@@ -29,6 +29,7 @@
 		9A9317892B28433200A2AB30 /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317882B28433200A2AB30 /* NewScrumSheet.swift */; };
 		9A93178B2B2845AE00A2AB30 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A93178A2B2845AE00A2AB30 /* History.swift */; };
 		9A93178D2B284A2800A2AB30 /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A93178C2B284A2800A2AB30 /* ScrumStore.swift */; };
+		9A9317912B28680900A2AB30 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317902B28680900A2AB30 /* ErrorWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		9A9317882B28433200A2AB30 /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 		9A93178A2B2845AE00A2AB30 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		9A93178C2B284A2800A2AB30 /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
+		9A9317902B28680900A2AB30 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				9A93177D2B28099700A2AB30 /* ScrumTimer.swift */,
 				9A93178A2B2845AE00A2AB30 /* History.swift */,
 				9A93178C2B284A2800A2AB30 /* ScrumStore.swift */,
+				9A9317902B28680900A2AB30 /* ErrorWrapper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				9A9317762B27247B00A2AB30 /* ThemeView.swift in Sources */,
 				9A93178D2B284A2800A2AB30 /* ScrumStore.swift in Sources */,
 				9A9317722B26FD5500A2AB30 /* DetailView.swift in Sources */,
+				9A9317912B28680900A2AB30 /* ErrorWrapper.swift in Sources */,
 				9A93177A2B2803B800A2AB30 /* MeetingHeaderView.swift in Sources */,
 				9A9317582B20386100A2AB30 /* MeetingView.swift in Sources */,
 				9A9317892B28433200A2AB30 /* NewScrumSheet.swift in Sources */,
