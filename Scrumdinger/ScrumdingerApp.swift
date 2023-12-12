@@ -13,8 +13,10 @@ struct ScrumdingerApp: App {
                         try await store.save(scrums: store.scrums)
                     }
                     catch {
-                        errorWrapper = ErrorWrapper(error: error,
-                                                    guidance: "Try again later.")
+                        errorWrapper = ErrorWrapper(
+                            error: error,
+                            guidance: "Try again later."
+                        )
                     }
                 }
             }
@@ -23,8 +25,10 @@ struct ScrumdingerApp: App {
                     try await store.load()
                 }
                 catch {
-                    errorWrapper = ErrorWrapper(error: error,
-                    guidance: "Scrumdinger will load sample data and continue.")
+                    errorWrapper = ErrorWrapper(
+                        error: error,
+                        guidance: "Scrumdinger will load sample data and continue."
+                    )
                 }
             }
             .sheet(item: $errorWrapper) {
