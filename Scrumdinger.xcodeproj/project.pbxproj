@@ -32,6 +32,7 @@
 		9A9317912B28680900A2AB30 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317902B28680900A2AB30 /* ErrorWrapper.swift */; };
 		9A9317932B28683D00A2AB30 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317922B28683D00A2AB30 /* ErrorView.swift */; };
 		9A9317952B286DF300A2AB30 /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317942B286DF300A2AB30 /* MeetingTimerView.swift */; };
+		9A9317972B286F5700A2AB30 /* SpeakerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317962B286F5700A2AB30 /* SpeakerArc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		9A9317902B28680900A2AB30 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
 		9A9317922B28683D00A2AB30 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		9A9317942B286DF300A2AB30 /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
+		9A9317962B286F5700A2AB30 /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				9A9317882B28433200A2AB30 /* NewScrumSheet.swift */,
 				9A9317922B28683D00A2AB30 /* ErrorView.swift */,
 				9A9317942B286DF300A2AB30 /* MeetingTimerView.swift */,
+				9A9317962B286F5700A2AB30 /* SpeakerArc.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				9A9317692B26EFDD00A2AB30 /* DailyScrum.swift in Sources */,
 				9A93177C2B2806F300A2AB30 /* ScrumProgressViewStyle.swift in Sources */,
 				9A9317802B280B8300A2AB30 /* MeetingFooterView.swift in Sources */,
+				9A9317972B286F5700A2AB30 /* SpeakerArc.swift in Sources */,
 				9A9317932B28683D00A2AB30 /* ErrorView.swift in Sources */,
 				9A93177E2B28099700A2AB30 /* ScrumTimer.swift in Sources */,
 				9A9317952B286DF300A2AB30 /* MeetingTimerView.swift in Sources */,
