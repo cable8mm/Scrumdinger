@@ -34,7 +34,9 @@ struct NewScrumSheet: View {
 
 struct NewScrumSheet_Previews: PreviewProvider {
     static var previews: some View {
-        NewScrumSheet(scrums: .constant(DailyScrum.sampleData),
-            isPresentingNewScrumView: .constant(true))
+        NewScrumSheet(
+            scrums: .constant(DailyScrum.sampleData),
+            isPresentingNewScrumView: .constant(true)
+        )
     }
 }

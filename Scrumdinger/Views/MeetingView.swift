@@ -45,7 +45,7 @@ struct MeetingView: View {
     private func endScrum() {
         scrumTimer.stopScrum()
         let newHistory = History(attendees: scrum.attendees)
-        scrum.history.insert(newHistory, at:0)
+        scrum.history.insert(newHistory, at: 0)
     }
 }
 
