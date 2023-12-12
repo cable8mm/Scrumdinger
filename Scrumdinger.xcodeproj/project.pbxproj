@@ -33,6 +33,7 @@
 		9A9317932B28683D00A2AB30 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317922B28683D00A2AB30 /* ErrorView.swift */; };
 		9A9317952B286DF300A2AB30 /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317942B286DF300A2AB30 /* MeetingTimerView.swift */; };
 		9A9317972B286F5700A2AB30 /* SpeakerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317962B286F5700A2AB30 /* SpeakerArc.swift */; };
+		9A9317992B28758400A2AB30 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317982B28758400A2AB30 /* SpeechRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		9A9317922B28683D00A2AB30 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		9A9317942B286DF300A2AB30 /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
 		9A9317962B286F5700A2AB30 /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
+		9A9317982B28758400A2AB30 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				9A93178A2B2845AE00A2AB30 /* History.swift */,
 				9A93178C2B284A2800A2AB30 /* ScrumStore.swift */,
 				9A9317902B28680900A2AB30 /* ErrorWrapper.swift */,
+				9A9317982B28758400A2AB30 /* SpeechRecognizer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				9A9317892B28433200A2AB30 /* NewScrumSheet.swift in Sources */,
 				9A9317672B26EF6B00A2AB30 /* Theme.swift in Sources */,
 				9A93176F2B26F46F00A2AB30 /* ScrumsView.swift in Sources */,
+				9A9317992B28758400A2AB30 /* SpeechRecognizer.swift in Sources */,
 				9A93176B2B26F02B00A2AB30 /* CardView.swift in Sources */,
 				9A9317742B27066900A2AB30 /* DetailEditView.swift in Sources */,
 				9A9317782B27256B00A2AB30 /* ThemePicker.swift in Sources */,
@@ -387,6 +391,7 @@
 				DEVELOPMENT_TEAM = M9N98B9A3K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -417,6 +422,7 @@
 				DEVELOPMENT_TEAM = M9N98B9A3K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
