@@ -6,11 +6,29 @@
 
 Scrumdinger is the SwiftUI Tutorial.
 
+## Installation
+
+```sh
+git clone https://github.com/cable8mm/Scrumdinger.git
+
+cd Scrumdinger
+```
+
 ## Coding style
 
 ```sh
 swift-format format -i -r ./
-swift-format lint -i -r ./
+swift-format lint -r ./
 ```
 
 If you want to do formatting in XCode, install XCFormat extension for XCode.
+
+## Build
+
+open Scrumdinger.xcodeproj for XCode.
+
+If you install it on your device, build it for iOS Devices - your device.
+
+## Resources
+
+https://developer.apple.com/tutorials/app-dev-training/getting-started-with-scrumdinger
