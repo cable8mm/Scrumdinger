@@ -17,7 +17,8 @@ struct ScrumProgressViewStyle: ProgressViewStyle {
                     .tint(theme.mainColor)
                     .frame(height: 12.0)
                     .padding(.horizontal)
-            } else {
+            }
+            else {
                 ProgressView(configuration)
                     .frame(height: 12.0)
                     .padding(.horizontal)

@@ -1,8 +1,6 @@
 import Foundation
 
-
 /// Keeps time for a daily scrum meeting. Keep track of the total meeting time, the time for each speaker, and the name of the current speaker.
-
 
 @MainActor
 final class ScrumTimer: ObservableObject {
@@ -25,12 +23,10 @@ final class ScrumTimer: ObservableObject {
     /// All meeting attendees, listed in the order they will speak.
     private(set) var speakers: [Speaker] = []
 
-
     /// The scrum meeting length.
     private(set) var lengthInMinutes: Int
     /// A closure that is executed when a new attendee begins speaking.
     var speakerChangedAction: (() -> Void)?
-
 
     private weak var timer: Timer?
     private var timerStopped = false
@@ -93,19 +89,17 @@ final class ScrumTimer: ObservableObject {
         speakerIndex = index
         activeSpeaker = speakerText
 
-
         secondsElapsed = index * secondsPerSpeaker
         secondsRemaining = lengthInSeconds - secondsElapsed
         startDate = Date()
     }
 
-
     nonisolated private func update() {
-
 
         Task { @MainActor in
             guard let startDate,
-                  !timerStopped else { return }
+                !timerStopped
+            else { return }
             let secondsElapsed = Int(Date().timeIntervalSince1970 - startDate.timeIntervalSince1970)
             secondsElapsedForSpeaker = secondsElapsed
             self.secondsElapsed = secondsPerSpeaker * speakerIndex + secondsElapsedForSpeaker
@@ -113,7 +107,6 @@ final class ScrumTimer: ObservableObject {
                 return
             }
             secondsRemaining = max(lengthInSeconds - self.secondsElapsed, 0)
-
 
             if secondsElapsedForSpeaker >= secondsPerSpeaker {
                 changeToSpeaker(at: speakerIndex + 1)
@@ -137,14 +130,12 @@ final class ScrumTimer: ObservableObject {
     }
 }
 
-
-
-
-extension Array<DailyScrum.Attendee> {
+extension [DailyScrum.Attendee] {
     var speakers: [ScrumTimer.Speaker] {
         if isEmpty {
             return [ScrumTimer.Speaker(name: "Speaker 1", isCompleted: false)]
-        } else {
+        }
+        else {
             return map { ScrumTimer.Speaker(name: $0.name, isCompleted: false) }
         }
     }

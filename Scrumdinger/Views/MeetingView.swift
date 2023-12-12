@@ -1,5 +1,5 @@
-import SwiftUI
 import AVFoundation
+import SwiftUI
 
 struct MeetingView: View {
     @Binding var scrum: DailyScrum
@@ -12,9 +12,11 @@ struct MeetingView: View {
             RoundedRectangle(cornerRadius: 16.0)
                 .fill(scrum.theme.mainColor)
             VStack {
-                MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed,
-                                  secondsRemaining: scrumTimer.secondsRemaining,
-                                  theme: scrum.theme)
+                MeetingHeaderView(
+                    secondsElapsed: scrumTimer.secondsElapsed,
+                    secondsRemaining: scrumTimer.secondsRemaining,
+                    theme: scrum.theme
+                )
                 Circle()
                     .strokeBorder(lineWidth: 24)
                 MeetingFooterView(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
