@@ -27,6 +27,7 @@
 		9A9317852B28339700A2AB30 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9A9317842B28339700A2AB30 /* ding.wav */; };
 		9A9317872B2833A300A2AB30 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317862B2833A300A2AB30 /* AVPlayer+Ding.swift */; };
 		9A9317892B28433200A2AB30 /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9317882B28433200A2AB30 /* NewScrumSheet.swift */; };
+		9A93178B2B2845AE00A2AB30 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A93178A2B2845AE00A2AB30 /* History.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		9A9317842B28339700A2AB30 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		9A9317862B2833A300A2AB30 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		9A9317882B28433200A2AB30 /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
+		9A93178A2B2845AE00A2AB30 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				9A9317662B26EF6B00A2AB30 /* Theme.swift */,
 				9A9317682B26EFDD00A2AB30 /* DailyScrum.swift */,
 				9A93177D2B28099700A2AB30 /* ScrumTimer.swift */,
+				9A93178A2B2845AE00A2AB30 /* History.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A93178B2B2845AE00A2AB30 /* History.swift in Sources */,
 				9A9317692B26EFDD00A2AB30 /* DailyScrum.swift in Sources */,
 				9A93177C2B2806F300A2AB30 /* ScrumProgressViewStyle.swift in Sources */,
 				9A9317802B280B8300A2AB30 /* MeetingFooterView.swift in Sources */,
