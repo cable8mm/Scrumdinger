@@ -1,8 +1,7 @@
-import Foundation
 import AVFoundation
+import Foundation
 import Speech
 import SwiftUI
-
 
 /// A helper for transcribing speech to text using SFSpeechRecognizer and AVAudioEngine.
 actor SpeechRecognizer: ObservableObject {
@@ -29,10 +28,8 @@ actor SpeechRecognizer: ObservableObject {
     private var task: SFSpeechRecognitionTask?
     private let recognizer: SFSpeechRecognizer?
 
-    /**
-     Initializes a new speech recognizer. If this is the first time you've used the class, it
-     requests access to the speech recognizer and the microphone.
-     */
+    /// Initializes a new speech recognizer. If this is the first time you've used the class, it
+    /// requests access to the speech recognizer and the microphone.
     init() {
         recognizer = SFSpeechRecognizer()
         guard recognizer != nil else {
@@ -48,7 +45,8 @@ actor SpeechRecognizer: ObservableObject {
                 guard await AVAudioSession.sharedInstance().hasPermissionToRecord() else {
                     throw RecognizerError.notPermittedToRecord
                 }
-            } catch {
+            }
+            catch {
                 transcribe(error)
             }
         }
@@ -72,12 +70,10 @@ actor SpeechRecognizer: ObservableObject {
         }
     }
 
-    /**
-     Begin transcribing audio.
-
-     Creates a `SFSpeechRecognitionTask` that transcribes speech to text until you call `stopTranscribing()`.
-     The resulting transcription is continuously written to the published `transcript` property.
-     */
+    /// Begin transcribing audio.
+    ///
+    /// Creates a `SFSpeechRecognitionTask` that transcribes speech to text until you call `stopTranscribing()`.
+    /// The resulting transcription is continuously written to the published `transcript` property.
     private func transcribe() {
         guard let recognizer, recognizer.isAvailable else {
             self.transcribe(RecognizerError.recognizerIsUnavailable)
@@ -88,10 +84,14 @@ actor SpeechRecognizer: ObservableObject {
             let (audioEngine, request) = try Self.prepareEngine()
             self.audioEngine = audioEngine
             self.request = request
-            self.task = recognizer.recognitionTask(with: request, resultHandler: { [weak self] result, error in
-                self?.recognitionHandler(audioEngine: audioEngine, result: result, error: error)
-            })
-        } catch {
+            self.task = recognizer.recognitionTask(
+                with: request,
+                resultHandler: { [weak self] result, error in
+                    self?.recognitionHandler(audioEngine: audioEngine, result: result, error: error)
+                }
+            )
+        }
+        catch {
             self.reset()
             self.transcribe(error)
         }
@@ -118,7 +118,8 @@ actor SpeechRecognizer: ObservableObject {
         let inputNode = audioEngine.inputNode
 
         let recordingFormat = inputNode.outputFormat(forBus: 0)
-        inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer: AVAudioPCMBuffer, when: AVAudioTime) in
+        inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) {
+            (buffer: AVAudioPCMBuffer, when: AVAudioTime) in
             request.append(buffer)
         }
         audioEngine.prepare()
@@ -127,7 +128,11 @@ actor SpeechRecognizer: ObservableObject {
         return (audioEngine, request)
     }
 
-    nonisolated private func recognitionHandler(audioEngine: AVAudioEngine, result: SFSpeechRecognitionResult?, error: Error?) {
+    nonisolated private func recognitionHandler(
+        audioEngine: AVAudioEngine,
+        result: SFSpeechRecognitionResult?,
+        error: Error?
+    ) {
         let receivedFinalResult = result?.isFinal ?? false
         let receivedError = error != nil
 
@@ -141,7 +146,6 @@ actor SpeechRecognizer: ObservableObject {
         }
     }
 
-
     nonisolated private func transcribe(_ message: String) {
         Task { @MainActor in
             transcript = message
@@ -151,7 +155,8 @@ actor SpeechRecognizer: ObservableObject {
         var errorMessage = ""
         if let error = error as? RecognizerError {
             errorMessage += error.message
-        } else {
+        }
+        else {
             errorMessage += error.localizedDescription
         }
         Task { @MainActor [errorMessage] in
@@ -159,7 +164,6 @@ actor SpeechRecognizer: ObservableObject {
         }
     }
 }
-
 
 extension SFSpeechRecognizer {
     static func hasAuthorizationToRecognize() async -> Bool {
@@ -170,7 +174,6 @@ extension SFSpeechRecognizer {
         }
     }
 }
-
 
 extension AVAudioSession {
     func hasPermissionToRecord() async -> Bool {
